@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Idea Box</title>
+  <link rel="stylesheet" href="../../vendor/bootstrap/dist/css/bootstrap.css" charset="utf-8">
+  <script src="../../vendor/jquery/dist/jquery.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Idea Box</h1>
+    <div class="row">
+      <div class="col-md-12 notes"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">New Note</h3>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+                <label for="note-title">Title</label>
+                <input type="text" class="form-control" id="note-title" placeholder="Title">
+              </div>
+              <div class="form-group">
+                <label for="note-body">Body</label>
+                <textarea class="form-control" id="note-body" placeholder="Body"></textarea>
+              </div>
+              <button class="btn btn-primary" id="submit-note" disabled="true">Submit New Idea</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../vendor/jquery/dist/jquery.js"></script>
+  <script src="./note-repository.js"></script>
+  <script>$(init)</script>
+</body>
+</html>
