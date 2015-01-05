@@ -23,6 +23,6 @@ At this very moment, there is [a little bit of a incompatibility](https://github
 
 As a result, you *have to* fire up the server with `bundle exec rackup`. Doing it this way will make sure we have the right version of Rack with the right version of Sinatra. I can't make any promises that it will work if you go rogue.
 
-### Step Two: Let's Test Some JavaScript
+## Step Two: Let's Test Some JavaScript
 
 We're going to step through six examples. Five of them have opportunities for you to cut your teeth on writing some Qunit tests.
