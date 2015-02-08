@@ -33,7 +33,7 @@ var addNote = function (note) {
 };
 
 var createNote = function () {
-  var title = $noteTitle.val(), body = $noteValue.val();
+  var title = $noteTitle.val(), body = $noteBody.val();
   NoteRepository.create({ title: title, body: body }).then(addNote);
 };
 
