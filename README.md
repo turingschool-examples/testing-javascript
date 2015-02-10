@@ -5,7 +5,7 @@
 If you don't have [Bower](http://bower.io), you're going to need it.
 
 ```shell
-sudo npm install bower
+sudo npm install -g bower
 ```
 
 Once you have Bower, install the dependencies.
