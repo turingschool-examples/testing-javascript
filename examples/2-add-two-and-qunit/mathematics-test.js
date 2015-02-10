@@ -16,6 +16,6 @@ test('addTwo()', function (assert) {
 module('Subtraction is important too');
 
 test('subtractThree()', function (assert) {
-  assert.strictEqual(subtractThree(0), 3, 'Half of a half-dozen');
-  assert.strictEqual(subtractThree(6), -3, 'But, everything means less than zero.');
+  assert.strictEqual(subtractThree(0), -3, 'Half of a half-dozen');
+  assert.strictEqual(subtractThree(6), 3, 'But, everything means less than zero.');
 });

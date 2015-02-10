@@ -19,3 +19,15 @@ test('Qunit should reset fixtures after each test', function (assert) {
   $('.show-message').click();
   assert.strictEqual($('.message').text(), this.message, 'It has a message again.');
 });
+
+module('test the hide message button', {
+  setup: function () {
+    bindClickEventToHideMessageButton();
+  }
+});
+
+test('clicking on the hide message button, um, hides the message', function (assert) {
+  $('.message').text('This should go away');
+  $('.hide-message').click();
+  assert.strictEqual($('.message').text(), '', 'The message should be gone!');
+});

@@ -1,11 +1,11 @@
 module('Test some even numbers');
 
-test('isEven()', function(assert) {
-  assert.ok(isEven(0), 'Zero is an even number. Strange, right?');
-  assert.ok(isEven(2), 'Two is like the textbook even number.');
-  assert.ok(isEven(-4), 'Sub-zero even numbers.');
-  assert.ok(!isEven(1), 'One is definitely not an even number.');
-  assert.ok(!isEven(-7), 'Negative seven is prime, not even. Grow up.');
+test('isEven()', function() {
+  ok(isEven(0));
+  ok(isEven(2));
+  ok(isEven(-4));
+  ok(!isEven(1));
+  ok(!isEven(-7));
 });
 
 module('Test some odd numbers');
