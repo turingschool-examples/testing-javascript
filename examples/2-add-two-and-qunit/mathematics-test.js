@@ -1,21 +1,35 @@
-module('Add two to some numbers');
+var assert = chai.assert;
 
-test('COERCION FAIL', function (assert) {
-  assert.equal('2', 2, 'This is not really what wanted.');
-  assert.notStrictEqual('2', 2, 'Much better.');
-  assert.strictEqual(addTwo(2), 4, 'Two plus two equals four.');
+describe('COERCION FAIL', function () {
+  it('This is not really what wanted.', function () {
+    assert.equal('2', 2);
+  });
+
+  it('Much better.', function () {
+    assert.notStrictEqual('2', 2);
+  });
+
+  it('Two plus two equals four.', function () {
+    assert.strictEqual(addTwo(2), 4);
+  });
 });
 
-// See what else Qunit has to offer: http://api.qunitjs.com/category/assert/
+describe('addTwo()', function () {
+  it('We can have multiple describes per module.', function () {
+    assert.strictEqual(addTwo(4), 6);
+  });
 
-test('addTwo()', function (assert) {
-  assert.strictEqual(addTwo(4), 6, 'We can have multiple tests per module.');
-  assert.notStrictEqual(addTwo(4), 4, 'I fell asleep during math class.');
+  it('I fell asleep during math class.', function () {
+    assert.notStrictEqual(addTwo(4), 4);
+  });
 });
 
-module('Subtraction is important too');
+describe('subtractThree()', function () {
+  it('Half of a half-dozen', function () {
+    assert.strictEqual(subtractThree(0), -3);
+  });
 
-test('subtractThree()', function (assert) {
-  assert.strictEqual(subtractThree(0), 3, 'Half of a half-dozen');
-  assert.strictEqual(subtractThree(6), -3, 'But, everything means less than zero.');
+  it('But, everything means less than zero.', function () {
+    assert.strictEqual(subtractThree(6), 3);
+  });
 });
