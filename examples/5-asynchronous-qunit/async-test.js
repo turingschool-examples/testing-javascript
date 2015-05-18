@@ -1,34 +1,12 @@
-module('Waiting for asynchronous code');
+var assert = chai.assert;
 
-test('demonstrate Qunit can do it', function (assert) {
-  var done = assert.async();
-  setTimeout(function() {
-    assert.ok(true);
-    done();
-  }, 500);
-});
+describe('Waiting for asynchronous code', function () {
 
-module('Multiple callbacks');
+  it('demonstrate mocha can do it', function (done) {
+    setTimeout(function() {
+      assert(true);
+      done();
+    }, 500);
+  });
 
-test('wait for multiple callbacks', function (assert) {
-  assert.expect(3);
-
-  var done1 = assert.async();
-  var done2 = assert.async();
-  var done3 = assert.async();
-
-  setTimeout(function() {
-    assert.ok(true);
-    done1();
-  }, 500);
-
-  setTimeout(function() {
-    assert.ok(true);
-    done2();
-  }, 500);
-
-  setTimeout(function() {
-    assert.ok(true);
-    done3();
-  }, 500);
 });
