@@ -1,18 +1,41 @@
-module('Test some even numbers');
+var assert = chai.assert;
 
-test('isEven()', function(assert) {
-  assert.ok(isEven(0), 'Zero is an even number. Strange, right?');
-  assert.ok(isEven(2), 'Two is like the textbook even number.');
-  assert.ok(isEven(-4), 'Sub-zero even numbers.');
-  assert.ok(!isEven(1), 'One is definitely not an even number.');
-  assert.ok(!isEven(-7), 'Negative seven is prime, not even. Grow up.');
+describe('isEven()', function () {
+  it('Zero is an even number. Strange, right?', function () {
+    assert(isEven(0));
+  });
+
+  it('Two is like the textbook even number.', function () {
+    assert(isEven(2));
+  });
+
+  it('Sub-zero even numbers.', function () {
+    assert(isEven(-4));
+  });
+
+  it('One is definitely not an even number.', function () {
+    assert(!isEven(1));
+  });
+
+  it('Negative seven is prime, not even. Grow up.', function () {
+    assert(!isEven(-7));
+  });
 });
 
-module('Test some odd numbers');
+describe('isOdd()', function () {
+  it('If one isn\'t odd, then I don\'t know what is.', function () {
+    assert(isOdd(1));
+  });
 
-test('isOdd()', function (assert) {
-  assert.ok(isOdd(1), 'If one isn\'t odd, then I don\'t know what is.');
-  assert.ok(isOdd(273), 'Go big or go home.');
-  assert.ok(!isOdd(2), 'Come one, two is like the anti-odd-number.');
-  assert.ok(isOdd(-301), 'Negative numbers work, right?');
+  it('Go big or go home.', function () {
+    assert(isOdd(273));
+  });
+
+  it('Come one, two is like the anti-odd-number.', function () {
+    assert(!isOdd(2));
+  });
+
+  it('Negative numbers work, right?', function () {
+    assert(isOdd(-301));
+  });
 });
