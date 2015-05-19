@@ -19,7 +19,7 @@ describe('test the secret message button', function () {
     assert.strictEqual($('.message').text(), this.message, 'It has a message now.');
   });
 
-  it('Qunit should reset fixtures after each test', function () {
+  it('Mocha should reset fixtures after each test', function () {
     assert.strictEqual('', $('.message').text(), 'The messages DIV should be empty again.');
     $('.show-message').click();
     assert.strictEqual($('.message').text(), this.message, 'It has a message again.');
