@@ -26,9 +26,12 @@ describe('NoteRepository', function () {
   // After we're done, we're going to put everything back. We'll stop spying
   // on $.ajax and restore the browser's ability to fire off AJAX requests.
 
+  // We'll also clear out the DOM after each test.
+
   afterEach(function () {
     $.ajax.restore();
     this.xhr.restore();
+    $('notes').html('');
   });
 
   // If you look at the call, you'll see that NoteRepository.all() is an
@@ -82,7 +85,10 @@ describe('fetchNotes()', function () {
 
   // And again: we're going to put everything done.
 
-  afterEach(function () { this.server.restore(); });
+  afterEach(function () {
+    this.server.restore();
+    $('notes').html('');
+  });
 
   it('appends some notes to the DOM', function () {
 
