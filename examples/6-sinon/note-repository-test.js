@@ -2,7 +2,7 @@ var assert =  chai.assert;
 
 // Let's take a look at spies in the context of a real working jQuery applicaiton.
 // We'll spy on $.ajax (which all other jQuery AJAX methods defer to) to make sure
-// that we actually calling an AJAX method.
+// that we are actually calling an AJAX method.
 
 describe('NoteRepository', function () {
 
@@ -44,14 +44,14 @@ describe('NoteRepository', function () {
     assert.strictEqual(this.requests.length, 1, 'We made one AJAX request');
   });
 
-  // So, we've verified than _an_ AJAX call was made, but we don't really know
+  // So, we've verified that _an_ AJAX call was made, but we don't really know
   // anything about that AJAX requestion. But, in the `beforeEach` function,
   // we shoved all of the requests into an array for later inspection. Let's go
   // ahead and take a look at that request and make sure it's doing the thing.
 
   it('#all makes a GET request to /api/notes', function () {
     NoteRepository.all();
-    var request = this.requests[0];
+    var request = this.request`s[0];
     assert.strictEqual(request.url, '/api/notes', 'We\'re hitting the right endpoint');
     assert.strictEqual(request.method, 'GET', 'We\'re firing the right method');
   });
@@ -83,7 +83,7 @@ describe('fetchNotes()', function () {
     this.server = sinon.fakeServer.create();
   });
 
-  // And again: we're going to put everything done.
+  // And again: we're going to put everything back.
 
   afterEach(function () {
     this.server.restore();
@@ -93,14 +93,14 @@ describe('fetchNotes()', function () {
   it('appends some notes to the DOM', function () {
 
     // This is a mocked response from the server that we'll use later.
-    // Server's will normal create a JSON string that jQuery then turns
+    // Server's will normally create a JSON string that jQuery then turns
     // back into a real JavaScript object. So, we'll mimic that behavior
     // with `JSON.stringify`.
 
     var notes = JSON.stringify([
-      { id: 1, title: 'Hello World', body: 'This is a note' },
+      { id: 1, title: 'Hello World',                       body: 'This is a note' },
       { id: 2, title: 'Start a Bon Iver look-a-like club', body: 'I am a hipster' },
-      { id: 3, title: 'Buy more apples', body: 'No, seriously, he ate three in about 10 minutes' }
+      { id: 3, title: 'Buy more apples',                   body: 'No, seriously, he ate three in about 10 minutes' }
     ]);
 
     // `fetchNotes()` is defined in our code. It's a function that leverages
