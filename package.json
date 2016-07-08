@@ -1,0 +1,24 @@
+{
+  "name": "testing-javascript",
+  "version": "1.0.0",
+  "description": "A small little project for learning to test JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Please run the tests from the browser.\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turingschool-examples/testing-javascript.git"
+  },
+  "author": "Steve Kinney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turingschool-examples/testing-javascript/issues"
+  },
+  "homepage": "https://github.com/turingschool-examples/testing-javascript#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-livereload": "0.0.24"
+  }
+}

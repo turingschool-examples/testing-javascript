@@ -1,28 +1,69 @@
-# JavaScript Testing
+# Introduction to Unit Testing in JavaScript
 
-## Step Zero: Get Yourself Some Dependencies
+## Installation
 
-If you don't have [Bower](http://bower.io), you're going to need it.
+First, clone this repository. Once, you have it on your computer, navigate to the directory in the terminal and run the following command:
 
-```shell
-sudo npm install -g bower
+```
+npm install
 ```
 
-Once you have Bower, install the dependencies.
+## Starting Up
 
-```shell
-bower install
-bundle
+Run the following from your terminal:
+
+```
+npm start
 ```
 
-Whammy! Your dependencies are installed in `./vendor`. The system works.
+## Getting Started
 
-## Step One: Fire Up the Server
+We'll be modifying two files as we complete these exercises:
 
-At this very moment, there is [a little bit of an incompatibility](https://github.com/sinatra/sinatra/pull/907) that affects the way we have our server set up.
+- `implentation.js`
+- `test.js`
 
-As a result, you *have to* fire up the server with `bundle exec rackup`. Doing it this way will make sure we have the right version of Rack with the right version of Sinatra. I can't make any promises that it will work if you go rogue.
+Just to verify that everything works, there should be a first example in place.
 
-## Step Two: Let's Test Some JavaScript
+```js
+// implementation.js
+function square(n) {
+  return n * n;
+}
+```
 
-We're going to step through six examples. Five of them have opportunities for you to cut your teeth on writing some Qunit tests.
+```js
+// test.js
+describe('square', function () {
+
+  it('returns the square of a number', function () {
+    assert.equal(square(2), 4);
+  });
+
+});
+```
+
+## Together
+
+Let's write a few simple cases together. We'll revisit our old friends from last week.
+
+- `addTwo()`
+- `multiply()`
+- `subtract()`
+- `multiply()`
+- `divide()`
+
+## Your Turn: FizzBuzz
+
+FizzBuzz is a classic programming program that a lot of programmers [apparently can't do][atwood].
+
+[atwood]: https://blog.codinghorror.com/why-cant-programmers-program/
+
+We're going to write a function called `fizzBuzz()` that will behave as follows with the each rule taking precendence over all previous rules:
+
+- If we pass it a number, it will return that number.
+- If we pass a number that is a multiple of 3, it will return 'Fizz'.
+- If we pass it a number that is a multiple of 5, it will return 'Buzz'.
+- If we pass it a number that is a multiple of both 3 and 5, it will return 'FizzBuzz'.
+
+
