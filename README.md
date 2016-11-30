@@ -66,4 +66,7 @@ We're going to write a function called `fizzBuzz()` that will behave as follows 
 - If we pass it a number that is a multiple of 5, it will return 'Buzz'.
 - If we pass it a number that is a multiple of both 3 and 5, it will return 'FizzBuzz'.
 
+## Resources
 
+* [Mocha Docs](https://mochajs.org/)
+* [Chai Docs](http://chaijs.com/)
