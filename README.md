@@ -45,12 +45,10 @@ describe('square', function () {
 
 ## Together
 
-Let's write a few simple cases together. We'll revisit our old friends from last week.
-
+Let's write a few simple cases together. 
 - `addTwo()`
 - `multiply()`
 - `subtract()`
-- `multiply()`
 - `divide()`
 
 ## Your Turn: FizzBuzz
