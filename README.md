@@ -25,14 +25,14 @@ We'll be modifying two files as we complete these exercises:
 
 Just to verify that everything works, there should be a first example in place.
 
-```js
+```javascript
 // implementation.js
 function square(n) {
   return n * n;
 }
 ```
 
-```js
+```javascript
 // test.js
 describe('square', function () {
 
@@ -45,19 +45,55 @@ describe('square', function () {
 
 ## Together
 
-Let's write a few simple cases together. 
+Let's write a few simple cases together.
 - `addTwo()`
 - `multiply()`
 - `subtract()`
 - `divide()`
 
-## Your Turn: FizzBuzz
+## Your Turn
+
+### Reverse String
+
+Create a function that reverses a string that is passed in as a parameter. For instance:
+
+```javascript
+myReverseFunction('reverse')
+
+'esrever'
+```
+
+Try to do this without using the `.reverse()` function in JavaScript.
+
+### Longest Word
+
+Create a function that can find the longest word in a sentence. For instance:
+
+```javascript
+findLongestWord('We had a great time!')
+
+'great'
+```
+
+### Time Convert
+
+Create a function that converts a number of minutes passed in as a parameter to the hours and minutes separated by a colon. For instance:
+
+```javascript
+convertTime(126)
+'2:06'
+
+convertTime(45)
+'0:45'
+```
+
+### FizzBuzz
 
 FizzBuzz is a classic programming program that a lot of programmers [apparently can't do][atwood].
 
 [atwood]: https://blog.codinghorror.com/why-cant-programmers-program/
 
-We're going to write a function called `fizzBuzz()` that will behave as follows with the each rule taking precendence over all previous rules:
+We're going to write a function called `fizzBuzz()` that will behave as follows with the each rule taking precedence over all previous rules:
 
 - If we pass it a number, it will return that number.
 - If we pass a number that is a multiple of 3, it will return 'Fizz'.
