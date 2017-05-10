@@ -2,7 +2,13 @@
 
 ## Installation
 
-First, clone this repository. Once, you have it on your computer, navigate to the directory in the terminal and run the following command:
+First, clone this repository.
+
+```shell
+git clone git@github.com:turingschool-examples/testing-javascript.git  
+```
+
+ Once, you have it on your computer, navigate to the directory in the terminal and run the following command:
 
 ```
 npm install
