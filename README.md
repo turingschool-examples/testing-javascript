@@ -2,21 +2,23 @@
 
 ## Installation
 
-First, clone this repository.
+First, clone this repository. For this lesson we will be using a repository set up to run Node.js, which means you'll be seeing some commands we haven't discussed that start with `npm`. We aren't going to dig into what this means today, but ultimately it allows us to pull in some powerful tools outside of our basic html/css/js files.
 
 ```shell
 git clone git@github.com:turingschool-examples/testing-javascript.git  
 ```
 
- Once, you have it on your computer, navigate to the directory in the terminal and run the following command:
+ Once, you have it on your computer, `cd` into the directory in the terminal and run the following command:
 
-```
+```shell
 npm install
 ```
 
+This command simply installs all of the dependencies we need to run tests.
+
 ## Starting Up
 
-Run the following from your terminal:
+Run the following command from your terminal to tell our node server to start the engines:
 
 ```
 npm start
@@ -109,4 +111,9 @@ We're going to write a function called `fizzBuzz()` that will behave as follows 
 ## Resources
 
 * [Mocha Docs](https://mochajs.org/)
-* [Chai Docs](http://chaijs.com/)
+* [Chai Docs](http://chaijs.com/)  
+
+## Dive Deeper
+
+* [Running Tests In the Browser](http://mochajs.org/#running-mocha-in-the-browser)  
+* [Blog Post about TDD vs BDD](http://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/)

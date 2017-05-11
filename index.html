@@ -6,21 +6,27 @@
   <link rel="stylesheet" media="all" href="/dependencies/mocha.css">
 </head>
 <body>
+
+  <!-- This stuff sets up a place on our DOM to print the output of our tests -->
   <div id="mocha"></div>
   <div id="messages"></div>
   <div id="fixtures"></div>
 
+  <!-- These lines give our browser access to the testing framework and assertion library -->
   <script src="/dependencies/mocha.js"></script>
   <script src="/dependencies/chai.js"></script>
 
+  <!-- These lines give the browser access to global methods that the testing frameworks use -->
   <script>
     mocha.setup('bdd');
     window.assert = chai.assert;
   </script>
 
+  <!-- These lines pull in our javascript file, and our test file -->
   <script src="implementation.js"></script>
   <script src="test.js"></script>
 
+  <!-- These lines run our testing framework and use some installed dependencies to reload our browser automatically when you make changes to your code -->
   <script>mocha.run();</script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')</script>
 </body>
