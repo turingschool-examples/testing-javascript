@@ -61,6 +61,8 @@ Let's write a few simple cases together.
 
 ## Your Turn
 
+**Pro Tip**: Feel free to google to figure out how to implement some of this logic.  
+
 ### Reverse String
 
 Create a function that reverses a string that is passed in as a parameter. For instance:
