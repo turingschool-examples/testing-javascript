@@ -18,10 +18,10 @@ This command simply installs all of the dependencies we need to run tests.
 
 ## Starting Up
 
-Run the following command from your terminal to run your tests
+Run the following command from your terminal to run to kick things off
 
 ```
-npm test
+npm start
 ```
 
 ## Getting Started
