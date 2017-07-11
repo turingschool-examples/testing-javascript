@@ -18,10 +18,10 @@ This command simply installs all of the dependencies we need to run tests.
 
 ## Starting Up
 
-Run the following command from your terminal to tell our node server to start the engines:
+Run the following command from your terminal to run your tests
 
 ```
-npm start
+npm test
 ```
 
 ## Getting Started
