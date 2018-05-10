@@ -45,7 +45,9 @@ function square(n) {
 describe('square', function () {
 
   it('returns the square of a number', function () {
-    assert.equal(square(2), 4);
+    var result = square(2);
+
+    assert.equal(result, 4);
   });
 
 });
