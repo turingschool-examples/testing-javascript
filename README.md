@@ -21,7 +21,7 @@ This command simply installs all of the dependencies we need to run tests.
 Run the following command from your terminal to run to kick things off
 
 ```
-npm start
+npm test
 ```
 
 ## Getting Started
