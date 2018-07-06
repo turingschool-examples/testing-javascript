@@ -70,7 +70,7 @@ Let's write a few simple cases together.
 Create a function that reverses a string that is passed in as a parameter. For instance:
 
 ```javascript
-myReverseFunction('reverse')
+reverseString('reverse')
 
 'esrever'
 ```
