@@ -24,6 +24,8 @@ Run the following command from your terminal to run to kick things off
 npm start
 ```
 
+Now, visit `http://localhost:4000/` in your browser.
+
 ## Getting Started
 
 We'll be modifying two files as we complete these exercises:
