@@ -14,7 +14,7 @@ git clone git@github.com:turingschool-examples/testing-javascript.git
 npm install
 ```
 
-This command simply installs all of the dependencies we need to run tests.
+This command installs all of the dependencies we need to run tests.
 
 ## Starting Up
 
@@ -35,8 +35,8 @@ Just to verify that everything works, there should be a first example in place.
 
 ```javascript
 // implementation.js
-function square(n) {
-  return n * n;
+function square(num) {
+  return num * num;
 }
 ```
 
@@ -55,24 +55,51 @@ describe('square', function () {
 
 ## Together
 
-Let's write a few simple cases together.
-- `addTwo()`
-- `multiply()`
-- `subtract()`
-- `divide()`
+Let's write a few cases together.
+- `addTwo();`
+- `multiplyTwo();`
+- `largerNumber();`
 
 ## Your Turn
 
 **Pro Tip**: Feel free to google to figure out how to implement some of this logic.  
+
+### Subtract
+
+Create a function that subtracts the second argument from the first argument passed in. For instance:
+
+```javascript
+subtract(5, 3);
+
+=> 2
+
+subtract(12, 2);
+
+=> 10
+```
+
+### Longer Word
+
+Create a function that finds which argument contains the longer word. For instance:
+
+```javascript
+longerWord("hi", "hello");
+
+=> "hello"
+
+longerWord("hey", "hi");
+
+=> "hey"
+```
 
 ### Reverse String
 
 Create a function that reverses a string that is passed in as a parameter. For instance:
 
 ```javascript
-reverseString('reverse')
+reverseString('reverse');
 
-'esrever'
+=> 'esrever'
 ```
 
 Try to do this without using the `.reverse()` function in JavaScript.
@@ -82,9 +109,9 @@ Try to do this without using the `.reverse()` function in JavaScript.
 Create a function that can find the longest word in a sentence. For instance:
 
 ```javascript
-findLongestWord('We had a great time!')
+findLongestWord('We had a great time!');
 
-'great'
+=> 'great'
 ```
 
 ### Time Convert
@@ -92,11 +119,11 @@ findLongestWord('We had a great time!')
 Create a function that converts a number of minutes passed in as a parameter to the hours and minutes separated by a colon. For instance:
 
 ```javascript
-convertTime(126)
+convertTime(126);
 '2:06'
 
-convertTime(45)
-'0:45'
+convertTime(45);
+=> '0:45'
 ```
 
 ### FizzBuzz
