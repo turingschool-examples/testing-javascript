@@ -26,6 +26,8 @@ npm start
 
 Now, visit `http://localhost:4000/` in your browser.
 
+**NOTE:** Now that you are running a server from your terminal, the terminal is not "available for use". You need to open another tab in your terminal to run any commands (like open your text editor, etc.). You can use the shortcut `cmd + t` for this!
+
 ## Getting Started
 
 We'll be modifying two files as we complete these exercises:
