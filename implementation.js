@@ -2,6 +2,5 @@ function square(num) {
   return num * num;
 }
 
-
-// Using line 9 is necessary to run tests with the command `npm test` IN YOUR TERMINAL
+// line 6 is necessary to allow this function, square, to be exported and read by another file
 // module.exports = square
