@@ -1,5 +1,3 @@
-// Here is an example to run tests IN YOUR BROWSER
-
 function square(num) {
   return num * num;
 }
