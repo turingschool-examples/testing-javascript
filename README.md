@@ -16,18 +16,6 @@ npm install
 
 This command installs all of the dependencies we need to run tests.
 
-## Starting Up
-
-Run the following command from your terminal to run to kick things off
-
-```
-npm start
-```
-
-Now, visit `http://localhost:4000/` in your browser.
-
-**NOTE:** Now that you are running a server from your terminal, the terminal is not "available for use". You need to open another tab in your terminal to run any commands (like open your text editor, etc.). You can use the shortcut `cmd + t` for this!
-
 ## Getting Started
 
 We'll be modifying two files as we complete these exercises:
@@ -56,6 +44,15 @@ describe('square', function () {
 
 });
 ```
+## Running a Test
+
+From your command line, make sure you are navigated into this repository's root. Run the following:
+
+```bash
+npm test test.js
+```
+
+What is that doing? `npm test` is the command, and `test.js` is the single argument we are passing it. We are telling the computer to run tests, specifically, the tests is `test.js` file.
 
 ## Together
 
